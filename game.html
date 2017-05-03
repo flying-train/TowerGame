@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Epic</title>
+	<style type="text/css">
+	html, body{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		border: 5px solid #A4CFDE;
+		overflow: hidden;
+	}
+	canvas{
+		padding: 0;
+		max-width: 100%;
+	}
+	#control-panel{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: #A4CFDE;
+		width: 100%;
+		height: 150px;
+	}
+	#towers{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.towers{
+		width: 100px;
+		height: 250px;
+		background-color: black;
+		position: absolute;
+		bottom: 150px;
+		z-index: -1;
+	}
+	</style>
+</head>
+<body onload="main()">
+	<canvas id='c'></canvas>
+	<div id="towers">
+		<div class="towers" style="left: 0">&nbsp;</div>
+		<div class="towers" style="right: 8px">&nbsp;</div>
+	</div>
+	<div id="control-panel">
+		
+	</div>
+
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
