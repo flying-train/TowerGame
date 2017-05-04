@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 5px solid #A4CFDE;
+    overflow: hidden;
+}
+
+canvas {
+    padding: 0;
+    max-width: 100%;
+}
+
+#control-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #A4CFDE;
+    width: 100%;
+    height: 150px;
+}
+
+.card {
+    padding: 0;
+    float: left;
+    margin: 10px;
+    list-style: none;
+    outline: solid;
+    width: 30px;
+    height: 30px;
+    /*width: 17%;*/
+    /*height: 17%;*/
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+#towers {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.towers {
+    width: 100px;
+    height: 250px;
+    background-color: black;
+    position: absolute;
+    bottom: 150px;
+    z-index: -1;
+}
