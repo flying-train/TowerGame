@@ -51,6 +51,13 @@ canvas {
     background-color: green;
 }
 
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+
 #towers {
     position: absolute;
     top: 0;
