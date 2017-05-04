@@ -1,5 +1,5 @@
 function main () {
-	var canvas = $('c');
+	var canvas = getEl('c');
 	var ctx = canvas.getContext('2d');
 	var cubes = []; 
 
@@ -32,6 +32,6 @@ function main () {
 	}
 	setInterval(update, 20)
 }
-function $ (el) {
+function getEl (el) {
 	return document.getElementById(el);
 }
