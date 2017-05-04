@@ -35,6 +35,10 @@ canvas {
     /*height: 17%;*/
 }
 
+.selected {
+    opacity: 0.5;
+}
+
 .red {
     background-color: red;
 }
@@ -45,6 +49,14 @@ canvas {
 
 .green {
     background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.yellow {
+    background-color: yellow;
 }
 
 #towers {

@@ -1,0 +1,1124 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tim",
+				"time_div"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"pa",
+				"pascal_div"
+			],
+			[
+				"pascal",
+				"pascal_input"
+			],
+			[
+				"chc",
+				"checkResult_div"
+			],
+			[
+				"coo",
+				"Coordinations"
+			],
+			[
+				"che",
+				"checkResult_div"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"temp_",
+				"temp_memory"
+			],
+			[
+				"dif",
+				"difficulty"
+			],
+			[
+				"set",
+				"setTi\tsettimeout"
+			],
+			[
+				"di",
+				"diff"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"pas",
+				"pascal_row"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"npc_",
+				"npc_score_full"
+			],
+			[
+				"sec",
+				"second_text"
+			],
+			[
+				"secon",
+				"second"
+			],
+			[
+				"timer",
+				"timer_div"
+			],
+			[
+				"t",
+				"timer_div"
+			],
+			[
+				"timer_",
+				"timer_full"
+			],
+			[
+				"clo",
+				"col-xs-5"
+			],
+			[
+				"col",
+				"col-xs-12"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"random",
+				"randomize"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"play",
+				"playRandom"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"diff",
+				"diff_div"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"log",
+				"log\tconsolelog"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"cla",
+				"addClass"
+			],
+			[
+				"te",
+				"temp_memory"
+			],
+			[
+				"gue",
+				"guess1"
+			],
+			[
+				"mo",
+				"memory"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"pla",
+				"playCard"
+			],
+			[
+				"gues",
+				"guess2"
+			],
+			[
+				"mari",
+				"margin"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"align",
+				"align-content"
+			],
+			[
+				"b",
+				"black"
+			],
+			[
+				"al",
+				"text-align"
+			],
+			[
+				"frm",
+				"format\tfunction"
+			],
+			[
+				"gene",
+				"generateLayers\tfunction"
+			],
+			[
+				"dun",
+				"dungeon_id\tstatement"
+			],
+			[
+				"dungeon",
+				"dungeon_id"
+			],
+			[
+				"dunge",
+				"dungeon_id"
+			],
+			[
+				"dug",
+				"dungeons_db\tstatement"
+			],
+			[
+				"room",
+				"rooms\tstatement"
+			],
+			[
+				"r",
+				"remove\tfunction"
+			],
+			[
+				"dis",
+				"dist_pattern\tstatement"
+			],
+			[
+				"x",
+				"x\tstatement"
+			],
+			[
+				"sa",
+				"save"
+			],
+			[
+				"nex",
+				"next_room\tstatement"
+			],
+			[
+				"ro",
+				"room_id\tstatement"
+			],
+			[
+				"ne",
+				"next_room\tstatement"
+			],
+			[
+				"pl",
+				"player\tstatement"
+			],
+			[
+				"is",
+				"is_occupied\tfunction"
+			],
+			[
+				"tiny",
+				"TinyDB"
+			],
+			[
+				"roo",
+				"room_id\tparam"
+			],
+			[
+				"tru",
+				"trojuhelnik\tclass"
+			],
+			[
+				"Error",
+				"ValueError"
+			],
+			[
+				"str",
+				"strB"
+			],
+			[
+				"tr",
+				"trojuhelnik\tclass"
+			],
+			[
+				"co",
+				"column\tstatement"
+			],
+			[
+				"new",
+				"new_row\tstatement"
+			],
+			[
+				"temp",
+				"temp_column_list\tstatement"
+			],
+			[
+				"com",
+				"column_list\tstatement"
+			],
+			[
+				"val",
+				"temp_value_list"
+			],
+			[
+				"all_",
+				"all_sheet\tstatement"
+			],
+			[
+				"forma",
+				"formatData\tfunction"
+			],
+			[
+				"form",
+				"formatData\tfunction"
+			],
+			[
+				"fo",
+				"formatData\tfunction"
+			],
+			[
+				"all",
+				"all_data\tstatement"
+			],
+			[
+				"sheet",
+				"sheet_data\tstatement"
+			],
+			[
+				"shee",
+				"sheet_data\tstatement"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"from",
+				"fromExcel\tfunction"
+			],
+			[
+				"to",
+				"toXlsx\tfunction"
+			],
+			[
+				"xls",
+				"cvt_xls_to_xlsx"
+			],
+			[
+				"xl",
+				"xlsToXlsX\tfunction"
+			],
+			[
+				"dele",
+				"deleteTemp\tfunction"
+			],
+			[
+				"wo",
+				"work_dir\tstatement"
+			],
+			[
+				"conver",
+				"convertToDocx\tfunction"
+			],
+			[
+				"cop",
+				"copyfile\tfunction"
+			],
+			[
+				"ex",
+				"extractFile\tfunction"
+			],
+			[
+				"fil",
+				"filename\tparam"
+			],
+			[
+				"zip",
+				"zipFile\tfunction"
+			],
+			[
+				"make",
+				"makedirs\tfunction"
+			],
+			[
+				"extract",
+				"extractAll\tfunction"
+			],
+			[
+				"z",
+				"zipAll\tfunction"
+			],
+			[
+				"list",
+				"listdir"
+			],
+			[
+				"extra",
+				"extractall\tfunction"
+			],
+			[
+				"print",
+				"printToFile\tfunction"
+			],
+			[
+				"doPE",
+				"doPermutations2\tfunction"
+			],
+			[
+				"doP",
+				"doPermutations2\tfunction"
+			],
+			[
+				"std",
+				"stdout\tinstance"
+			],
+			[
+				"remo",
+				"removeRedundant\tfunction"
+			],
+			[
+				"pem",
+				"perm_list\tstatement"
+			],
+			[
+				"i",
+				"i\tforstmt"
+			],
+			[
+				"Al",
+				"printAll"
+			],
+			[
+				"comp",
+				"compareAll2\tfunction"
+			],
+			[
+				"shap",
+				"shapes\tstatement"
+			],
+			[
+				"sor",
+				"sortAll\tfunction"
+			],
+			[
+				"arr",
+				"arr2\tstatement"
+			],
+			[
+				"prin",
+				"print\tfunction"
+			],
+			[
+				"du",
+				"testDuplicity"
+			],
+			[
+				"shape",
+				"shapes\tparam"
+			],
+			[
+				"poin",
+				"point_q\tforstmt"
+			],
+			[
+				"compa",
+				"compareAll\tfunction"
+			],
+			[
+				"poi",
+				"point_q\tforstmt"
+			],
+			[
+				"pon",
+				"point_q\tforstmt"
+			],
+			[
+				"point",
+				"point_p\tforstmt"
+			],
+			[
+				"a",
+				"append"
+			],
+			[
+				"p",
+				"p\tforstmt"
+			],
+			[
+				"x_li",
+				"x_list_temp\tstatement"
+			],
+			[
+				"pri",
+				"print\tfunction"
+			],
+			[
+				"c",
+				"c\tparam"
+			],
+			[
+				"tes",
+				"test_results\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "game.css",
+			"settings":
+			{
+				"buffer_size": 931,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "game.js",
+			"settings":
+			{
+				"buffer_size": 2080,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "game.html",
+			"settings":
+			{
+				"buffer_size": 855,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python"
+			],
+			[
+				"sync",
+				"PackageSync: Sync Online - Define Online Sync Folder"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packagesync",
+				"PackageSync: Sync Online - Define Online Sync Folder"
+			],
+			[
+				"repl py",
+				"SublimeREPL: Python"
+			],
+			[
+				"isnt",
+				"Package Control: Install Package"
+			],
+			[
+				"python",
+				"Build With: Python - Syntax Check"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 629.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jan/~/Programming/TowerGame/game.html",
+		"/home/jan/Dropbox/Programming/Web_school/hw_layout.html",
+		"/home/jan/Dropbox/Programming/UM/base.py",
+		"/home/jan/Dropbox/Programming/Web_school/pexeso.js",
+		"/home/jan/Dropbox/Programming/Web_school/pascal.js",
+		"/home/jan/Dropbox/Programming/CookieClicker.py",
+		"/home/jan/Dropbox/Programming/Web_school/school.html",
+		"/home/jan/Dropbox/Programming/Web_school/index.html",
+		"/home/jan/Dropbox/Programming/Web_school/SELECT k.nazev nazev_kraje, o.mysql",
+		"/home/jan/Dropbox/Programming/Web_school/pexeso.css",
+		"/home/jan/Dropbox/Programming/Web_school/hw_layout.css",
+		"/home/jan/Dropbox/scripts",
+		"/home/jan/Dropbox/Programming/Web_school/hw.css",
+		"/home/jan/Dropbox/Programming/Web_school/bootstrap.html",
+		"/home/jan/Dropbox/Programming/Web_school/starter-template.css",
+		"/home/jan/Dropbox/Programming/Web_school/test.py",
+		"/home/jan/Downloads/bootstrap-select-1.12.2/js/bootstrap-select.js",
+		"/home/jan/Dropbox/Programming/Web_school/pexeso.html",
+		"/home/jan/Dropbox/Programming/Web_school/js/bootstrap.min.js",
+		"/home/jan/Dropbox/Programming/Web_school/css/bootstrap.min.css",
+		"/home/jan/Dropbox/Programming/Web_school/css/bootstrap.css",
+		"/home/jan/Dropbox/Programming/Web_school/css/bootstrap-responsive.css",
+		"/home/jan/Dropbox/Programming/Web_school/school.css",
+		"/home/jan/Dropbox/Programming/Web_school/backup_pexeso.js",
+		"/home/jan/Dropbox/Programming/Web_school/backup_pexeso.css",
+		"/home/jan/Dropbox/Programming/Web_school/main.js",
+		"/home/jan/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/Default (Linux).sublime-keymap",
+		"/home/jan/Dropbox/Programming/Web_school/hw.html",
+		"/home/jan/Dropbox/Programming/Web_school/old.js",
+		"/D/Dropbox/Programming/UM/newArticle.py",
+		"/D/Dropbox/SublimeText/Preferences.sublime-settings",
+		"/D/Dropbox/SublimeText/Package Control.sublime-settings",
+		"/C/Users/jan/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/jan/AppData/Roaming/Sublime Text 3/Packages/User/Python_builder.sublime-build",
+		"/D/Dropbox/Programming/Web_school/TODO.txt",
+		"/D/Dropbox/Programming/Web_school/TODO.txx",
+		"/D/Dropbox/Programming/Web_school/old.js",
+		"/D/Dropbox/Programming/Web_school/main.html",
+		"/home/jan/Dropbox/Programming/Game/main.py",
+		"/home/jan/Dropbox/Programming/Game/dungeon.py",
+		"/home/jan/Dropbox/Programming/Game/saves/rooms.json",
+		"/home/jan/Dropbox/Programming/Game/saves/dungeons.json",
+		"/home/jan/Dropbox/Programming/Game/saves/layers.json",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/room.py",
+		"/home/jan/Downloads/nadvsh-1.85.3/nadvsh",
+		"/home/jan/.config/openbox/lubuntu-rc.xml",
+		"/opt/kingsoft/wps-office/office6/res/wpscommon.kuip",
+		"/home/jan/Dropbox/Programming/Game/modules/dungeon.py",
+		"/home/jan/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/jan/Dropbox/Programming/School/kolotoc.py",
+		"/home/jan/Dropbox/Programming/webcrawl.py",
+		"/home/jan/Dropbox/Programming/Fantasia/modules/main.py",
+		"/home/jan/Dropbox/Programming/Fantasia/modules/world.py",
+		"/home/jan/Dropbox/Programming/Fantasia/modules/items.py",
+		"/home/jan/Dropbox/Programming/Fantasia/modules/magic.py",
+		"/home/jan/Dropbox/Programming/Fantasia/modules/characters.py",
+		"/home/jan/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/jan/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/jan/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/jan/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/jan/Dropbox/Programming/School/neurony.py",
+		"/home/jan/Dropbox/Programming/School/rovnotvary.py",
+		"/home/jan/Dropbox/Programming/Fantasia/modules/dungeon.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/main.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/game.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/player.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/actions.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/saves/player.json",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/saves/rooms.json",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/world.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/characters.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/monsters.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/modules/items.py",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/saves/inventory.json",
+		"/home/jan/Dropbox/Programming/DnDasia_simply/RoadPlan.txt",
+		"/home/jan/Dropbox/Programming/School/Zkouska/zk1.py",
+		"/home/jan/Dropbox/Programming/School/Zkouska/zk2.py",
+		"/home/jan/typescript",
+		"/home/jan/Dropbox/Programming/School/Zkouska/zk3.py",
+		"/home/jan/Dropbox/Programming/School/Zkouska/zk4.py",
+		"/home/jan/Dropbox/Programming/Drevo/getdata.py",
+		"/home/jan/Dropbox/Programming/Drevo/files.py",
+		"/home/jan/Dropbox/Programming/Drevo/main.py",
+		"/home/jan/Dropbox/Programming/Drevo/data.txt",
+		"/home/jan/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/jan/.config/sublime-text-3/Packages/Anaconda/Default (Linux).sublime-keymap",
+		"/home/jan/Dropbox/Programming/Drevo/toexcel.py",
+		"/home/jan/Dropbox/Programming/Drevo/all.py",
+		"/home/jan/Dropbox/Programming/Drevo/Files/Output/DK 017 16 - Smlouva o dílo - Dřevostavby Vanžura sro - RD Chuderov - Kadlečková/DK 017 16 - Smlouva o dílo - Dřevostavby Vanžura sro - RD Chuderov - Kadlečková.txt",
+		"/home/jan/Dropbox/Programming/Drevo/getExcels.py",
+		"/home/jan/Dropbox/Programming/Drevo/getText.py",
+		"/home/jan/Dropbox/Programming/moviesort.py",
+		"/home/jan/Dropbox/Programming/movies.py",
+		"/home/jan/Dropbox/Programming/Drevo/Files/[Content_Types].xml",
+		"/home/jan/Dropbox/Programming/Drevo/Files_text/DK 001 16 - Smlouva o dílo - HBH - Modřany spol sro - RD Zlatníky.txt",
+		"/usr/share/themes/Ambiance/xfwm4/themerc",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-widgets.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/public-colors.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-widgets-assets.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-widgets-assets-radiance.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-widgets-borders.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-widgets-borders-radiance.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-widgets-radiance.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-main.css",
+		"/usr/share/themes/Lubuntu-default/gtk-3.0/gtk-lubuntu.css",
+		"/usr/share/themes/Ambiance/gtk-2.0/gtkrc",
+		"/usr/share/themes/Ambiance/index.theme",
+		"/usr/share/themes/Ambiance/gtk-2.0/panel.rc",
+		"/usr/share/themes/Ambiance/gtk-2.0/apps/chromium.rc",
+		"/usr/share/themes/Ambiance/gtk-2.0/apps/panel.rc",
+		"/home/jan/.bashrc",
+		"/home/jan/.config/lxsession/Lubuntu/autostart",
+		"/etc/lightdm/lightdm.conf.d/20-lubuntu.conf",
+		"/home/jan/.config/openbox/lxde-rc.xml",
+		"/media/jan/Kindle/documents/O/Sapkowski/E-Kniha--Zaklinac_Sbirka_Tandaradei_Andrzej_Sapkowski.mobi--(obchodnik.weebly.com).txt",
+		"/home/jan/Dropbox/Programming/School/kolotoce_2.txt",
+		"/media/jan/Kindle/documents/O/Sapkowski/E-Kniha--Zaklinac_Mec_osudu.pdf--(obchodnik.weebly.com).txt",
+		"/media/jan/Kindle/documents/O/Sapkowski/E-Kniha--Zaklinac_Veecny_ohen.pdf--(obchodnik.weebly.com).txt",
+		"/home/jan/zv.txt",
+		"/home/jan/Dropbox/Programming/School/kolotoce.txt",
+		"/home/jan/Dropbox/Programming/kolotoce.txt",
+		"/home/jan/Dropbox/Programming/DnDasia/kolotoce.txt",
+		"/home/jan/Dropbox/Programming/DnDasia/kolotoc.py",
+		"/home/jan/Dropbox/Programming/DnDasia/vysledky.txt",
+		"/home/jan/Dropbox/Programming/DnDasia/modules/actions.py",
+		"/home/jan/Dropbox/Programming/DnDasia/modules/characters.py",
+		"/home/jan/Dropbox/Programming/DnDasia/modules/main.py",
+		"/home/jan/Dropbox/Programming/DnDasia/modules/room.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"===",
+			"\"memory\"",
+			"removeClass(\"mem",
+			"console.log",
+			";\\n",
+			";",
+			"===",
+			"res",
+			"-md-",
+			"\t\n",
+			"difficulty =",
+			"i--",
+			"moves_div",
+			"moves_di",
+			"saveSettings",
+			"count",
+			"rest",
+			"npcT",
+			"turn = ",
+			"diff",
+			"slice",
+			"slive",
+			"hascla",
+			"swi",
+			";\n",
+			"hide",
+			"ignor",
+			"E309",
+			"is_room",
+			"flee",
+			")\n",
+			"self.db",
+			"do_",
+			"do_action",
+			"room",
+			"xrange",
+			"E309",
+			"format",
+			"auto format",
+			"pep",
+			"š",
+			"os.delete(join(work_dir, filename[:-4], filename[:-4] + \"_temp\"))",
+			"pep8",
+			"E501",
+			".windo",
+			"roundness",
+			"Iconify",
+			"mize",
+			"xml",
+			"decreaseIn",
+			"increa",
+			"decreaseIndent",
+			"SplitTableByColumn",
+			"<!-- <shortcut cmd=\"IncreaseIndent\" key=\"Shift+Alt+Right\"/> -->",
+			"Shift+Alt+Right",
+			"space",
+			"toggleMa",
+			"maximize",
+			"maximizeFull",
+			"lst",
+			"pole",
+			"True",
+			"\n    #     for i in range(0, 3):\n    #         d_list.append(\n    #             findD(x_list_temp[0], x_list_temp[1], x_list_temp[2])[i])\n\n    # for d in d_list:\n    #     # print(\"{}, {}, {}, {}, {}\".format(x1, x2, x3, x4, d))\n    #     for i in range(0, 4):\n    #         shapes.append(\n    #             findEFGH(x1, x2, x3, x4, d)[i])\n\n    # # print(shapes)",
+			"save",
+			"room",
+			"-1",
+			"is_alive ",
+			"is_alive",
+			"is_alive ",
+			"isAlive()",
+			"player",
+			"enemy",
+			"lengt",
+			"long",
+			"Fantasia",
+			"format",
+			"autoformat"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"==",
+			"//console.log",
+			"\\n",
+			"'n",
+			"",
+			"==",
+			"-sm-",
+			"restart",
+			"player_db",
+			"range",
+			"array",
+			"1",
+			"is_alive()",
+			"is_alive",
+			"self.player",
+			"self.monster",
+			"DnDasia"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "game.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "game.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								466
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/Python 3/Python3.sublime-build",
+	"project": "towergame.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
