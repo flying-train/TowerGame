@@ -1,4 +1,5 @@
 var cardCount = 0
+var selectedCount = 0
 
 function main() {
     var canvas = getEl('c');
@@ -44,12 +45,16 @@ function getEl(el) {
     return document.getElementById(el);
 }
 
+function setEl(el, what){
+    document.getElementById(el).innerHTML = what
+}
+
 // Control panel
 
 function addCard() {
     // alert("A-E")
     var rand = Math.floor(Math.random() * 3)
-    console.log(rand)
+    // console.log(rand)
     var colors = ["red", "green", "blue"]
 
     $("#cp-list").append($("<li class='card " + colors[rand] + "''></li>"))
@@ -61,29 +66,39 @@ function addCard() {
     })
 }
 
+function playButton() {
+    $(".selected").removeCard()
+    selectedCount = 0
+}
+
 
 $.fn.playCard = function playCard() {
-    score = score + 1
-    getEl("score").innerHTML = score;
-
-    $(this).removeCard();
-
+    if ($(this).hasClass("selected")){
+        $(this).removeClass("selected")
+        selectedCount--
+    }
+    else if (selectedCount < 5){
+        $(this).addClass("selected")
+        selectedCount++
+    }
 }
 
 $.fn.removeCard = function removeCard() {
-    cardCount--
+    cardCount = cardCount - selectedCount
     $(this).remove();
 }
 
-function restart() {
-    score = 0
-    getEl("score").innerHTML = score;
-}
+// function restart() {
+// }
+
 setInterval(function() {
     if (cardCount < 8) {
         addCard()
     }
 
+    // setEl("cards", cardCount)
+    // setEl("selected-cards", selectedCount)
+
 }, 1000)
 
-restart()
+// restart()
