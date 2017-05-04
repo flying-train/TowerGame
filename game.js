@@ -11,7 +11,13 @@ function main() {
     for (var i = 0; i < 1; i++) {
         new Cube();
     };
-
+    //---
+    var testcube = new Cube();
+    testcube.update = function() {
+        this.collision();
+    }
+    testcube.x = 500;
+    //---
     function Cube() {
         this.a = 50;
         this.x = 150;
@@ -21,7 +27,16 @@ function main() {
         }
         this.update = function() {
             this.x++;
-        };
+            this.collision();
+        }
+        this.collision = function() {
+            for (var i = 0; i < cubes.length; i++) {
+                if (this.x > cubes[i].x && this.x < cubes[i].x + cubes[i].a) {
+                    cubes.pop(this);
+                    cubes.pop(cubes[i]);
+                }
+            }
+        }
         cubes.push(this);
     }
 
@@ -32,7 +47,7 @@ function main() {
             cubes[i].draw();
         };
     }
-    setInterval(update, 20)
+    setInterval(update, 10)
 
 
 
