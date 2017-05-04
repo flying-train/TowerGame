@@ -1,6 +1,9 @@
 var cardCount = 0
 var selectedCount = 0
 
+var cardInterval = 500
+var updateInteval = 10
+
 var canvas = getEl('c');
 var ctx = canvas.getContext('2d');
 var cubes = [];
@@ -8,21 +11,22 @@ var cubes = [];
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 150;
 
-function main() {}
+function main() {
 
-function makeCube(value) {
-
-    for (var i = 0; i < 1; i++) {
-        new Cube(value);
-    };
-    setInterval(update, 20)
 }
 
-function Cube(a) {
+function makeCube(value, color) {
+    new Cube(value, color);
+}
+
+function Cube(a, color) {
     this.a = a;
     this.x = 150;
     this.y = canvas.height - this.a;
     this.draw = function() {
+        ctx.fillStyle = color;
+        // console.log(color)
+
         ctx.fillRect(this.x, this.y, this.a, this.a);
     }
     this.update = function() {
@@ -39,7 +43,7 @@ function update() {
     };
 }
 
-//
+// Tools
 function getEl(el) {
     return document.getElementById(el);
 }
@@ -54,11 +58,11 @@ function addCard() {
     // alert("A-E")
     var rand = Math.floor(Math.random() * 5)
         // console.log(rand)
-    var colors = ["red", "green", "blue", "black", "white"]
+    var colors = ["red", "green", "blue", "black", "yellow"]
 
     $("#cp-list").append($("<li class='card " + colors[rand] + "''></li>"))
     cardCount++
-    // Not a nice solution WIP
+    // Not a great solution WIP
     $(".card").unbind("click");
     $(".card").click(function() {
         $(this).playCard()
@@ -66,14 +70,36 @@ function addCard() {
 }
 
 function playButton() {
-    $(".selected").removeCard()
-    makeCube(selectedCount*25)
+    makeCube(selectedCount * (selectedCount) * 10, detectColor())
+    $("li").not(".card").removeCard()
     selectedCount = 0
 
 }
 
-function detectCombination() {
-
+function detectColor() {
+    colors = [];
+    $(".selected").each(function(index, el) {
+        $(this).removeClass("selected");
+        $(this).removeClass("card");
+        colors.push($(this).attr("class"));
+    })
+    colors.sort()
+    var max = 0,
+        result, freq = 0;
+    for (var i = 0; i < colors.length; i++) {
+        if (colors[i] === colors[i + 1]) {
+            freq++;
+        } else {
+            freq = 0;
+        }
+        if (freq > max) {
+            result = colors[i];
+            max = freq;
+        } else {
+            result = colors[Math.floor(Math.random() * colors.length)]
+        }
+    }
+    return (result)
 }
 
 
@@ -93,10 +119,11 @@ $.fn.removeCard = function removeCard() {
     $(this).remove();
 }
 
-// function restart() {
-// }
+
+// Intervals
 
 setInterval(function() {
+    //Adding new cards
     if (cardCount < 8) {
         addCard()
     }
@@ -104,6 +131,9 @@ setInterval(function() {
     // setEl("cards", cardCount)
     // setEl("selected-cards", selectedCount)
 
-}, 1000)
+}, cardInterval)
 
-// restart()
+setInterval(function() {
+    //Updating cube location (also will be collision detection)
+    update()
+}, updateInteval)

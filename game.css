@@ -54,8 +54,9 @@ canvas {
 .black {
     background-color: black;
 }
-.white {
-    background-color: white;
+
+.yellow {
+    background-color: yellow;
 }
 
 #towers {
