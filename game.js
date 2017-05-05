@@ -29,6 +29,39 @@ testcube.x = 500;
 testcube.player = false
     //---
 
+////Lord of the Rings: Two towers
+function Tower(player) {
+    this.a = 100;
+    this.b = 300;
+    this.y = canvas.height - this.b;
+    if (player == true) {
+        this.x = 0;
+
+    } else {
+        this.x = canvas.width - 100;
+    }
+
+    this.draw = function() {
+        if (player == true) {
+            ctx.fillStyle = "blue"
+        } else { ctx.fillStyle = "red" }
+
+        ctx.fillRect(this.x, this.y, this.a, this.b);
+    }
+    this.update = function() {
+        this.draw()
+    }
+}
+
+var towerPlayer = new Tower(true);
+towerPlayer.draw()
+var towerEnemy = new Tower(false);
+towerEnemy.draw()
+
+
+
+
+
 
 //// Cube
 function makeCube() {
@@ -36,12 +69,16 @@ function makeCube() {
     a = new Cube();
     a.player = true;
     a.x = 150;
+    // ctx.fillStyle = "blue"
+    // cubes.push(a)
 }
 
 function makeEnemyCube() {
     a = new Cube();
     a.player = false;
     a.x = canvas.width - 150;
+    // ctx.fillStyle = "red"
+    // cubesEnemy.push(a)
 }
 
 function Cube() {
@@ -50,6 +87,7 @@ function Cube() {
     this.y = canvas.height - this.a;
     this.player = true
     this.draw = function() {
+        ctx.fillStyle = "black"
         ctx.fillRect(this.x, this.y, this.a, this.a);
     }
     this.update = function() {
@@ -74,6 +112,17 @@ function Cube() {
                 }
             }
         }
+        if (this.x > towerPlayer.x && this.x < towerPlayer.x + towerPlayer.a) {
+            cubes.splice(cubes.indexOf(this), 1)
+            towerPlayer.b = towerPlayer.b - ((this.a * this.a) / towerPlayer.a)
+            towerPlayer.y = canvas.height - towerPlayer.b
+        }
+        if (this.x > towerEnemy.x && this.x < towerEnemy.x + towerEnemy.a) {
+            cubes.splice(cubes.indexOf(this), 1)
+            towerEnemy.b = towerEnemy.b - ((this.a * this.a) / towerEnemy.a)
+            towerEnemy.y = canvas.height - towerEnemy.b
+        }
+
     }
     this.move = function() {
         if (this.player == true) {
@@ -90,9 +139,18 @@ function Cube() {
 ////Global functions
 function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-        for (var i = 0; i < cubes.length; i++) {
-            cubes[i].update();
-        }
+    for (var i = 0; i < cubes.length; i++) {
+        cubes[i].update();
+    }
+    towerEnemy.update();
+    towerPlayer.update();
+
+    // if (towerPlayer.b <= 0){
+    //     alert("You lost")
+    // } else if (towerEnemy.b <= 0){
+    //     alert("You won")
+    // }
+
 }
 
 ////Tools
@@ -178,8 +236,9 @@ function playEnemy() {
 
 //// Main
 
-setInterval(function() {if (cardCount < 8) {addCard();}}, cardInterval);
+setInterval(function() {
+    if (cardCount < 8) { addCard(); }
+}, cardInterval);
 
 setInterval(update, updateInteval);
-setInterval(playEnemy, cardInterval*3);
-
+setInterval(playEnemy, cardInterval * 2);

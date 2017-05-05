@@ -59,7 +59,7 @@ canvas {
     background-color: yellow;
 }
 
-#towers {
+/*#towers {
     position: absolute;
     top: 0;
     width: 100%;
@@ -73,4 +73,4 @@ canvas {
     position: absolute;
     bottom: 150px;
     z-index: -1;
-}
+}*/
