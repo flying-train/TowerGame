@@ -33,7 +33,15 @@ testcube.player = false
 //// Cube
 function makeCube() {
     // Additional Cube constructor
-    new Cube();
+    a = new Cube();
+    a.player = true;
+    a.x = 150;
+}
+
+function makeEnemyCube() {
+    a = new Cube();
+    a.player = false;
+    a.x = canvas.width - 150;
 }
 
 function Cube() {
@@ -82,12 +90,9 @@ function Cube() {
 ////Global functions
 function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    // console.log(cubes.length)
-    if (cubes.length > 0) {
         for (var i = 0; i < cubes.length; i++) {
             cubes[i].update();
         }
-    }
 }
 
 ////Tools
@@ -166,8 +171,15 @@ $.fn.removeCard = function removeCard() {
 //     return (result)
 // }
 
+////Enemy logic
+function playEnemy() {
+    makeEnemyCube();
+}
+
 //// Main
 
 setInterval(function() {if (cardCount < 8) {addCard();}}, cardInterval);
 
 setInterval(update, updateInteval);
+setInterval(playEnemy, cardInterval*3);
+
