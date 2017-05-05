@@ -4,6 +4,7 @@ var selectedCount = 0
 var canvas = getEl('c');
 var ctx = canvas.getContext('2d');
 var cubes = [];
+var cubesEnemy = [];
 
 var cardInterval = 500
 var updateInteval = 10
@@ -20,10 +21,10 @@ for (var i = 0; i < 1; i++) {
 };
 //---
 var testcube = new Cube();
-testcube.update = function() {
-    this.collision();
-    this.draw();
-}
+// testcube.update = function() {
+//     this.collision();
+//     this.draw();
+// }
 testcube.x = 500;
 testcube.player = false
     //---
@@ -48,24 +49,17 @@ function Cube() {
     this.collision = function() {
         for (var i = 0; i < cubes.length; i++) {
             if (this.x > cubes[i].x && this.x < cubes[i].x + cubes[i].a) {
-                // cubes.pop(this);
-                // cubes.pop(cubes[i]);
-                // pokud se nepletu, pop maže poslední člen, splice ten co chceme
-                console.log(this.player)
-
                 if (this.a > cubes[i].a) {
-                    console.log("Me")
-                    console.log(this.x + "; " + this.y)
                     this.a = this.a - cubes[i].a
-                    cubes.splice(i)
-                    console.log(this.x + "; " + this.y)
-
+                    this.y = canvas.height - this.a;
+                    cubes.splice(i, 1)
                 } else if (this.a < cubes[i].a) {
                     cubes[i].a = cubes[i].a - this.a
-                    cubes.splice(cubes.indexOf(this))
+                    cubes[i].y = canvas.height - cubes[i].a;
+                    cubes.splice(cubes.indexOf(this), 1)
                 } else {
-                    cubes.splice(cubes.indexOf(this))
-                    cubes.splice(i)
+                    cubes.splice(cubes.indexOf(this), 1)
+                    cubes.splice(i, 1)
                 }
             }
         }
@@ -89,6 +83,10 @@ function update() {
         }
     }
 }
+
+// function collision() {
+
+// }
 
 //
 function getEl(el) {
@@ -169,12 +167,6 @@ $.fn.removeCard = function removeCard() {
     $(this).remove();
 }
 
-function restart() {
-    // score = 0
-    // getEl("score").innerHTML = score;
-}
-
-
 // Main
 
 setInterval(function() {
@@ -185,5 +177,3 @@ setInterval(function() {
 }, cardInterval)
 
 setInterval(update, updateInteval);
-
-restart()
