@@ -29,7 +29,10 @@ testcube.x = 500;
 testcube.player = false
     //---
 
+
+//// Cube
 function makeCube() {
+    // Additional Cube constructor
     new Cube();
 }
 
@@ -71,9 +74,12 @@ function Cube() {
             this.x--;
         }
     }
+
     cubes.push(this);
 }
 
+
+////Global functions
 function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     // console.log(cubes.length)
@@ -84,11 +90,7 @@ function update() {
     }
 }
 
-// function collision() {
-
-// }
-
-//
+////Tools
 function getEl(el) {
     return document.getElementById(el);
 }
@@ -97,12 +99,9 @@ function setEl(el, what) {
     document.getElementById(el).innerHTML = what
 }
 
-// Control panel
-
+//// Control panel functions
 function addCard() {
-    // alert("A-E")
     var rand = Math.floor(Math.random() * 3)
-        // console.log(rand)
     var colors = ["red", "green", "blue"]
 
     $("#cp-list").append($("<li class='card " + colors[rand] + "''></li>"))
@@ -122,6 +121,23 @@ function playButton() {
     }
 }
 
+$.fn.playCard = function playCard() {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected")
+        selectedCount--
+    } else if (selectedCount < 5) {
+        $(this).addClass("selected")
+        selectedCount++
+    }
+}
+
+$.fn.removeCard = function removeCard() {
+    // WIP
+    cardCount = cardCount - selectedCount
+    $(this).remove();
+}
+
+//// Element logic
 // function detectColor() {
 //     colors = [];
 //     $(".selected").each(function(index, el) {
@@ -150,30 +166,8 @@ function playButton() {
 //     return (result)
 // }
 
+//// Main
 
-$.fn.playCard = function playCard() {
-    if ($(this).hasClass("selected")) {
-        $(this).removeClass("selected")
-        selectedCount--
-    } else if (selectedCount < 5) {
-        $(this).addClass("selected")
-        selectedCount++
-    }
-}
-
-$.fn.removeCard = function removeCard() {
-    // WIP
-    cardCount = cardCount - selectedCount
-    $(this).remove();
-}
-
-// Main
-
-setInterval(function() {
-    if (cardCount < 8) {
-        addCard()
-    }
-
-}, cardInterval)
+setInterval(function() {if (cardCount < 8) {addCard();}}, cardInterval);
 
 setInterval(update, updateInteval);
