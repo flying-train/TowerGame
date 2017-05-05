@@ -1,7 +1,12 @@
 var cardCount = 0
+var selectedCount = 0
+
 var canvas = getEl('c');
 var ctx = canvas.getContext('2d');
 var cubes = [];
+
+var cardInterval = 500
+var updateInteval = 10
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 150;
@@ -16,6 +21,11 @@ testcube.update = function() {
 }
 testcube.x = 500;
 //---
+
+function makeCube() {
+    new Cube();
+}
+
 function Cube() {
     this.a = 50;
     this.x = 150;
@@ -42,10 +52,13 @@ function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (var i = 0; i < cubes.length; i++) {
         cubes[i].update();
-        cubes[i].draw();
+        if (cubes.length > 0) {
+            cubes[i].draw();
+        }
     };
+
 }
-setInterval(update, 10);
+
 
 function playButton() {
     new Cube();
@@ -54,6 +67,10 @@ function playButton() {
 //
 function getEl(el) {
     return document.getElementById(el);
+}
+
+function setEl(el, what) {
+    document.getElementById(el).innerHTML = what
 }
 
 // Control panel
@@ -73,23 +90,59 @@ function addCard() {
     })
 }
 
-
-$.fn.playCard = function playCard() {
-    score = score + 1
-    getEl("score").innerHTML = score;
-
-    $(this).removeCard();
+function playButton() {
+    makeCube()
+    $("li").not(".card").removeCard()
+    selectedCount = 0
 
 }
 
+
+$.fn.playCard = function playCard() {
+    if ($(this).hasClass("selected")) {
+        $(this).removeClass("selected")
+        selectedCount--
+    } else if (selectedCount < 5) {
+        $(this).addClass("selected")
+        selectedCount++
+    }
+}
+
+function detectColor() {
+    colors = [];
+    $(".selected").each(function(index, el) {
+        $(this).removeClass("selected");
+        $(this).removeClass("card");
+        colors.push($(this).attr("class"));
+    })
+    colors.sort()
+    var max = 0,
+        result, freq = 0;
+    for (var i = 0; i < colors.length; i++) {
+        if (colors[i] === colors[i + 1]) {
+            freq++;
+        } else {
+            freq = 0;
+        }
+        if (freq > max) {
+            result = colors[i];
+            max = freq;
+        } else {
+            result = colors[Math.floor(Math.random() * colors.length)]
+        }
+    }
+    return (result)
+}
+
 $.fn.removeCard = function removeCard() {
-    cardCount--
+    // WIP
+    cardCount = cardCount - selectedCount
     $(this).remove();
 }
 
 function restart() {
-    score = 0
-    getEl("score").innerHTML = score;
+    // score = 0
+    // getEl("score").innerHTML = score;
 }
 
 setInterval(function() {
@@ -97,6 +150,9 @@ setInterval(function() {
         addCard()
     }
 
-}, 1000)
+}, cardInterval)
+
+setInterval(update, updateInteval);
+
 
 restart()
