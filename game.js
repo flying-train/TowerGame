@@ -11,6 +11,10 @@ var updateInteval = 10
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 150;
 
+
+var cardInterval = 1000
+var updateInteval = 10
+
 for (var i = 0; i < 1; i++) {
     new Cube();
 };
@@ -18,31 +22,59 @@ for (var i = 0; i < 1; i++) {
 var testcube = new Cube();
 testcube.update = function() {
     this.collision();
+    this.draw();
 }
 testcube.x = 500;
-//---
+testcube.player = false
+    //---
 
 function makeCube() {
     new Cube();
 }
 
 function Cube() {
-    this.a = 50;
+    this.a = Math.floor(Math.random() * 50) + 20;
     this.x = 150;
     this.y = canvas.height - this.a;
+    this.player = true
     this.draw = function() {
         ctx.fillRect(this.x, this.y, this.a, this.a);
     }
     this.update = function() {
-        this.x++;
+        this.move()
         this.collision();
+        this.draw()
     }
     this.collision = function() {
         for (var i = 0; i < cubes.length; i++) {
             if (this.x > cubes[i].x && this.x < cubes[i].x + cubes[i].a) {
-                cubes.pop(this);
-                cubes.pop(cubes[i]);
+                // cubes.pop(this);
+                // cubes.pop(cubes[i]);
+                // pokud se nepletu, pop maže poslední člen, splice ten co chceme
+                console.log(this.player)
+
+                if (this.a > cubes[i].a) {
+                    console.log("Me")
+                    console.log(this.x + "; " + this.y)
+                    this.a = this.a - cubes[i].a
+                    cubes.splice(i)
+                    console.log(this.x + "; " + this.y)
+
+                } else if (this.a < cubes[i].a) {
+                    cubes[i].a = cubes[i].a - this.a
+                    cubes.splice(cubes.indexOf(this))
+                } else {
+                    cubes.splice(cubes.indexOf(this))
+                    cubes.splice(i)
+                }
             }
+        }
+    }
+    this.move = function() {
+        if (this.player == true) {
+            this.x++;
+        } else {
+            this.x--;
         }
     }
     cubes.push(this);
@@ -50,18 +82,12 @@ function Cube() {
 
 function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var i = 0; i < cubes.length; i++) {
-        cubes[i].update();
-        if (cubes.length > 0) {
-            cubes[i].draw();
+    // console.log(cubes.length)
+    if (cubes.length > 0) {
+        for (var i = 0; i < cubes.length; i++) {
+            cubes[i].update();
         }
-    };
-
-}
-
-
-function playButton() {
-    new Cube();
+    }
 }
 
 //
@@ -78,7 +104,7 @@ function setEl(el, what) {
 function addCard() {
     // alert("A-E")
     var rand = Math.floor(Math.random() * 3)
-    console.log(rand)
+        // console.log(rand)
     var colors = ["red", "green", "blue"]
 
     $("#cp-list").append($("<li class='card " + colors[rand] + "''></li>"))
@@ -91,11 +117,40 @@ function addCard() {
 }
 
 function playButton() {
-    makeCube()
-    $("li").not(".card").removeCard()
-    selectedCount = 0
-
+    if (selectedCount > 0) {
+        makeCube()
+        $(".selected").removeCard()
+        selectedCount = 0
+    }
 }
+
+// function detectColor() {
+//     colors = [];
+//     $(".selected").each(function(index, el) {
+//         $(this).removeClass("selected");
+//         $(this).removeClass("card");      
+//         colors.push($(this).attr("class"));
+//         $(this).addClass("card");
+//         $(this).addClass("selected");
+//     })
+//     colors.sort()
+//     var max = 0,
+//         result, freq = 0;
+//     for (var i = 0; i < colors.length; i++) {
+//         if (colors[i] === colors[i + 1]) {
+//             freq++;
+//         } else {
+//             freq = 0;
+//         }
+//         if (freq > max) {
+//             result = colors[i];
+//             max = freq;
+//         } else {
+//             result = colors[Math.floor(Math.random() * colors.length)]
+//         }
+//     }
+//     return (result)
+// }
 
 
 $.fn.playCard = function playCard() {
@@ -106,32 +161,6 @@ $.fn.playCard = function playCard() {
         $(this).addClass("selected")
         selectedCount++
     }
-}
-
-function detectColor() {
-    colors = [];
-    $(".selected").each(function(index, el) {
-        $(this).removeClass("selected");
-        $(this).removeClass("card");
-        colors.push($(this).attr("class"));
-    })
-    colors.sort()
-    var max = 0,
-        result, freq = 0;
-    for (var i = 0; i < colors.length; i++) {
-        if (colors[i] === colors[i + 1]) {
-            freq++;
-        } else {
-            freq = 0;
-        }
-        if (freq > max) {
-            result = colors[i];
-            max = freq;
-        } else {
-            result = colors[Math.floor(Math.random() * colors.length)]
-        }
-    }
-    return (result)
 }
 
 $.fn.removeCard = function removeCard() {
@@ -145,6 +174,9 @@ function restart() {
     // getEl("score").innerHTML = score;
 }
 
+
+// Main
+
 setInterval(function() {
     if (cardCount < 8) {
         addCard()
@@ -153,6 +185,5 @@ setInterval(function() {
 }, cardInterval)
 
 setInterval(update, updateInteval);
-
 
 restart()

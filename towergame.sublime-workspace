@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"de",
+				"detectCombination"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"con",
+				"console.log"
+			],
+			[
+				"cla",
+				"class\t(game.html)"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"card",
+				"cardInterval"
+			],
+			[
+				"upda",
+				"updateInteval"
+			],
+			[
 				"tim",
 				"time_div"
 			],
@@ -146,10 +178,6 @@
 			[
 				"ge",
 				"getElementById"
-			],
-			[
-				"cla",
-				"addClass"
 			],
 			[
 				"te",
@@ -486,44 +514,26 @@
 			[
 				"pon",
 				"point_q\tforstmt"
-			],
-			[
-				"point",
-				"point_p\tforstmt"
-			],
-			[
-				"a",
-				"append"
-			],
-			[
-				"p",
-				"p\tforstmt"
-			],
-			[
-				"x_li",
-				"x_list_temp\tstatement"
-			],
-			[
-				"pri",
-				"print\tfunction"
-			],
-			[
-				"c",
-				"c\tparam"
-			],
-			[
-				"tes",
-				"test_results\tstatement"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "game.html",
+			"settings":
+			{
+				"buffer_size": 864,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "game.css",
 			"settings":
 			{
-				"buffer_size": 931,
+				"buffer_size": 934,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -531,15 +541,8 @@
 			"file": "game.js",
 			"settings":
 			{
-				"buffer_size": 2080,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "game.html",
-			"settings":
-			{
-				"buffer_size": 855,
+				"buffer_size": 2920,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -568,9 +571,33 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "ins",
+		"last_filter": "ena",
 		"selected_items":
 		[
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
@@ -582,10 +609,6 @@
 			[
 				"lore",
 				"Snippet: Lorem ipsum"
-			],
-			[
-				"pack",
-				"Package Control: List Packages"
 			],
 			[
 				"lorem",
@@ -624,10 +647,6 @@
 				"Build With: Python - Syntax Check"
 			],
 			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
 				"Package Control: ",
 				"Package Control: Install Package"
 			],
@@ -644,10 +663,6 @@
 				"File: Delete"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"install",
 				"Package Control: Install Package"
 			],
@@ -656,7 +671,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 629.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -677,6 +692,9 @@
 	},
 	"file_history":
 	[
+		"/home/jan/.config/sublime-text-3/Packages/All Autocomplete/All Autocomplete.sublime-settings",
+		"/home/jan/.config/sublime-text-3/Packages/User/All Autocomplete.sublime-settings",
+		"/home/jan/~/Programming/TowerGame/towergame.sublime-project",
 		"/home/jan/~/Programming/TowerGame/game.html",
 		"/home/jan/Dropbox/Programming/Web_school/hw_layout.html",
 		"/home/jan/Dropbox/Programming/UM/base.py",
@@ -801,14 +819,11 @@
 		"/home/jan/Dropbox/Programming/DnDasia/kolotoce.txt",
 		"/home/jan/Dropbox/Programming/DnDasia/kolotoc.py",
 		"/home/jan/Dropbox/Programming/DnDasia/vysledky.txt",
-		"/home/jan/Dropbox/Programming/DnDasia/modules/actions.py",
-		"/home/jan/Dropbox/Programming/DnDasia/modules/characters.py",
-		"/home/jan/Dropbox/Programming/DnDasia/modules/main.py",
-		"/home/jan/Dropbox/Programming/DnDasia/modules/room.py"
+		"/home/jan/Dropbox/Programming/DnDasia/modules/actions.py"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -823,6 +838,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"white",
 			"===",
 			"\"memory\"",
 			"removeClass(\"mem",
@@ -907,6 +923,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"yellow",
 			"==",
 			"//console.log",
 			"\\n",
@@ -939,24 +956,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "game.css",
+					"file": "game.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 931,
+						"buffer_size": 864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								855,
+								855
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -969,19 +986,49 @@
 				},
 				{
 					"buffer": 1,
-					"file": "game.js",
+					"file": "game.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2080,
+						"buffer_size": 934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								707,
+								707
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 511.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2878,
+								2878
 							]
 						],
 						"settings":
@@ -991,37 +1038,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "game.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 855,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								466,
-								466
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1711.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1077,7 +1094,7 @@
 	"project": "towergame.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
